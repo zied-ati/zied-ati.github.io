@@ -523,22 +523,6 @@ ul.courses li:hover {
     margin-bottom: .5em;
 }
 
-.level .bar {
-    border: 1px solid #ddd;
-    display: block;
-    width: 10em;
-    height: 5px;
-    position: relative;
-}
-
-.level .bar::after {
-    position: absolute;
-    content: " ";
-    top: 0;
-    left: 0;
-    background: black;
-    height: 5px;
-}
 
 .level.beginner .bar::after {
     background: #EB5F51;
@@ -767,6 +751,9 @@ ul.courses li:hover {
     .item.display {
         display: block;
         opacity: 1 !important;
+    }
+    .level .bar {
+        display: none;
     }
 }
 
@@ -1054,6 +1041,9 @@ ul.courses li:hover {
             English
           </h3>
           <div class="item">
+            <div class="level fluency full professional proficiency">
+              <em>full professional proficiency</em>
+            </div>
           </div>
         </div>
         <div class="display">
@@ -1061,6 +1051,9 @@ ul.courses li:hover {
             French
           </h3>
           <div class="item">
+            <div class="level fluency full professional proficiency">
+              <em>full professional proficiency</em>
+            </div>
           </div>
         </div>
       </section>
@@ -1077,6 +1070,14 @@ ul.courses li:hover {
           <ul class="keywords">
             <li>Hiking</li>
             <li>camping</li>
+          </ul>
+        </div>
+        <div class="item">
+          <h3 class="name">
+            Drinking Coffee
+          </h3>
+          <ul class="keywords">
+            <li>Coding Sponsor</li>
           </ul>
         </div>
       </section>
